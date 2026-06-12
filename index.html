@@ -4,150 +4,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Algi — Your assistant, in WhatsApp</title>
-  <meta name="description" content="Algi is a personal AI assistant that lives in your WhatsApp. Text it like a friend — it handles your reminders, calendar, email, and to-dos." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <meta name="description" content="Algi is a personal assistant that lives in your WhatsApp. Reminders, calendar, email — handled by text." />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='2' y='2' width='13' height='13' rx='2' fill='%231e6f6b'/><rect x='17' y='2' width='13' height='13' rx='2' fill='%23d9a441'/><rect x='2' y='17' width='13' height='13' rx='2' fill='%23c4502f'/><rect x='17' y='17' width='13' height='13' rx='2' fill='%2356a89f'/></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23111111'/></svg>" />
 </head>
 <body>
 
   <header class="nav">
-    <a class="wordmark" href="#">
-      <span class="mark" aria-hidden="true">
-        <i></i><i></i><i></i><i></i>
-      </span>
-      algi
-    </a>
-    <nav>
-      <a href="#features">What it does</a>
-      <a href="#how">How it works</a>
-      <a class="nav-cta" href="https://wa.me/15555555555?text=Hi%20Algi!" target="_blank" rel="noopener">Open WhatsApp</a>
-    </nav>
+    <a class="wordmark" href="#">algi</a>
+    <a class="nav-cta" href="https://wa.me/15555555555?text=Hi%20Algi!" target="_blank" rel="noopener">Open WhatsApp</a>
   </header>
 
   <main>
-    <!-- ============ HERO ============ -->
     <section class="hero">
-      <div class="hero-copy">
-        <h1>Your life, handled.<br /><em>Right in WhatsApp.</em></h1>
-        <p class="lede">
-          Algi lives where you already talk. Text it like a friend — it remembers,
-          reminds, schedules, and follows up, so nothing slips through the tiles.
-        </p>
-        <div class="hero-actions">
-          <a class="btn-whatsapp" href="https://wa.me/15555555555?text=Hi%20Algi!" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
-              <path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2.05 22l5.27-1.38c1.45.79 3.08 1.21 4.72 1.21 5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2zm5.83 14.12c-.25.7-1.45 1.33-2.02 1.39-.52.05-1.18.07-1.9-.12-.44-.14-1-.33-1.72-.64-3.03-1.31-5-4.36-5.16-4.56-.15-.2-1.23-1.64-1.23-3.12 0-1.49.78-2.22 1.06-2.52.27-.3.6-.38.8-.38l.57.01c.18.01.43-.07.67.51.25.6.85 2.08.92 2.23.08.15.13.33.03.53-.1.2-.15.32-.3.5-.15.17-.32.39-.45.52-.15.15-.31.31-.13.61.18.3.79 1.31 1.7 2.12 1.17 1.04 2.16 1.37 2.46 1.52.3.15.48.13.66-.08.18-.2.76-.88.96-1.18.2-.3.4-.25.67-.15.28.1 1.76.83 2.06.98.3.15.5.23.58.35.07.13.07.73-.18 1.43z"/>
-            </svg>
-            Chat with Algi
-          </a>
-          <span class="hero-hint">Free to try · No download · No new account</span>
-        </div>
-      </div>
-
-      <!-- Phone mockup -->
-      <div class="hero-phone" aria-hidden="true">
-        <div class="phone">
-          <div class="phone-top">
-            <span class="phone-avatar">
-              <i></i><i></i><i></i><i></i>
-            </span>
-            <div class="phone-id">
-              <strong>Algi</strong>
-              <span>online</span>
-            </div>
-          </div>
-          <div class="phone-chat">
-            <div class="msg out">remind me to call the dentist tmrw at 9 and move my 2pm with Sara to thursday</div>
-            <div class="msg in">Done ✅ Reminder set for 9:00am, and your 2pm with Sara is now Thursday at 2pm — I've messaged her the new invite.</div>
-            <div class="msg out">what's my day look like?</div>
-            <div class="msg in">Light one 🌊 Standup at 10, lunch with Tom at 1, and your flight check-in opens at 4 — want me to handle it?</div>
-            <div class="msg out">yes pls 🙏</div>
-            <div class="msg in">Checked in. Boarding pass is in your email — seat 11A, window. ✈️</div>
-          </div>
-          <div class="phone-input">
-            <span>Message</span>
-            <div class="phone-send"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="mosaic-band" aria-hidden="true"></div>
+      <h1>An assistant in your WhatsApp.</h1>
+      <p class="lede">Text it like a friend. It handles reminders, calendar, and email.</p>
+      <a class="btn" href="https://wa.me/15555555555?text=Hi%20Algi!" target="_blank" rel="noopener">Chat with Algi</a>
+      <p class="hint">Free to try · No download · No new account</p>
     </section>
 
-    <!-- ============ FEATURES ============ -->
-    <section class="features" id="features">
-      <h2><span class="tile-accent"></span>One number. Everything handled.</h2>
-      <p class="section-lede">No dashboards, no new habits. If you can send a text, you already know how to use Algi.</p>
-      <div class="feature-grid">
-        <article class="card card-teal">
-          <div class="card-tiles"><i></i><i></i><i></i></div>
-          <h3>Remembers everything</h3>
-          <p>"Remind me when I land." "What was that restaurant Maya mentioned?" Algi keeps track so your brain doesn't have to.</p>
-        </article>
-        <article class="card card-gold">
-          <div class="card-tiles"><i></i><i></i><i></i></div>
-          <h3>Runs your calendar</h3>
-          <p>Schedules, reschedules, and finds time that works — and sends the invites for you. Conflicts get caught before they happen.</p>
-        </article>
-        <article class="card card-coral">
-          <div class="card-tiles"><i></i><i></i><i></i></div>
-          <h3>Tames your inbox</h3>
-          <p>A morning brief of what actually matters, drafts ready to send, and the noise quietly filed away.</p>
-        </article>
-        <article class="card card-sea">
-          <div class="card-tiles"><i></i><i></i><i></i></div>
-          <h3>Speaks your language</h3>
-          <p>Voice notes, typos, three thoughts in one message at midnight — Algi gets it. Reply whenever; it picks up where you left off.</p>
-        </article>
+    <figure class="art">
+      <img src="images/mosaic-sea.jpg" alt="Sea mosaic with a jellyfish in teal and gold tiles" />
+    </figure>
+
+    <section class="features">
+      <div class="feature">
+        <h2>Remembers</h2>
+        <p>"What was that restaurant Maya mentioned?" It keeps track.</p>
+      </div>
+      <div class="feature">
+        <h2>Schedules</h2>
+        <p>Finds time, sends invites, catches conflicts.</p>
+      </div>
+      <div class="feature">
+        <h2>Handles email</h2>
+        <p>A morning brief and drafts ready to send.</p>
       </div>
     </section>
 
-    <!-- ============ HOW IT WORKS ============ -->
-    <section class="how" id="how">
-      <h2><span class="tile-accent gold"></span>Up and running in one message</h2>
-      <ol class="steps">
-        <li>
-          <span class="step-num">1</span>
-          <h3>Say hi</h3>
-          <p>Tap the button below — it opens a WhatsApp chat with Algi. No signup forms, no app store.</p>
-        </li>
-        <li>
-          <span class="step-num">2</span>
-          <h3>Connect what you like</h3>
-          <p>Link your calendar and email when you're ready. Algi works with as little or as much as you give it.</p>
-        </li>
-        <li>
-          <span class="step-num">3</span>
-          <h3>Just text it</h3>
-          <p>Ask, vent, delegate. The more you use it, the more it learns how you like things done.</p>
-        </li>
-      </ol>
-    </section>
+    <figure class="art">
+      <img src="images/mosaic-coral.jpg" alt="Red coral mosaic on white plaster" />
+    </figure>
 
-    <!-- ============ FINAL CTA ============ -->
-    <section class="cta-final">
-      <div class="cta-inner">
-        <h2>Life is a lot of little pieces.<br />Let Algi put them together.</h2>
-        <a class="btn-whatsapp big" href="https://wa.me/15555555555?text=Hi%20Algi!" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
-            <path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2.05 22l5.27-1.38c1.45.79 3.08 1.21 4.72 1.21 5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2zm5.83 14.12c-.25.7-1.45 1.33-2.02 1.39-.52.05-1.18.07-1.9-.12-.44-.14-1-.33-1.72-.64-3.03-1.31-5-4.36-5.16-4.56-.15-.2-1.23-1.64-1.23-3.12 0-1.49.78-2.22 1.06-2.52.27-.3.6-.38.8-.38l.57.01c.18.01.43-.07.67.51.25.6.85 2.08.92 2.23.08.15.13.33.03.53-.1.2-.15.32-.3.5-.15.17-.32.39-.45.52-.15.15-.31.31-.13.61.18.3.79 1.31 1.7 2.12 1.17 1.04 2.16 1.37 2.46 1.52.3.15.48.13.66-.08.18-.2.76-.88.96-1.18.2-.3.4-.25.67-.15.28.1 1.76.83 2.06.98.3.15.5.23.58.35.07.13.07.73-.18 1.43z"/>
-          </svg>
-          Start chatting with Algi
-        </a>
-        <p class="cta-fine">Works with the WhatsApp you already have.</p>
-      </div>
-      <div class="mosaic-band flip" aria-hidden="true"></div>
+    <section class="cta">
+      <h2>One message to start.</h2>
+      <a class="btn" href="https://wa.me/15555555555?text=Hi%20Algi!" target="_blank" rel="noopener">Chat with Algi</a>
     </section>
   </main>
 
   <footer class="footer">
-    <span class="mark small" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-    <p>© 2026 Algi. Made with many small pieces.</p>
+    <p>© 2026 Algi</p>
   </footer>
 
-  <script src="mosaic.js"></script>
 </body>
 </html>
